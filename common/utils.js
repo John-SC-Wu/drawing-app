@@ -6,6 +6,7 @@ utils.formatPercent = (n) => {
   return (n * 100).toFixed(2) + "%";
 };
 
+// --- print out the pregress in percent within command line ---
 utils.printProgress = (count, max) => {
   process.stdout.clearLine();
   process.stdout.cursorTo(0);

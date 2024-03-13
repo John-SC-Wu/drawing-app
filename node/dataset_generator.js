@@ -26,6 +26,7 @@ fileNames.forEach((fn) => {
 
     generateImageFile(constants.IMG_DIR + "/" + id + ".png", paths);
 
+    // --- each drawer has 8 drawings ---
     utils.printProgress(id, fileNames.length * 8);
 
     id++;
