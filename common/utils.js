@@ -1,6 +1,16 @@
 const utils = {};
 
 utils.flaggedUsers = [1663882102141, 1663900040545, 16644859383220]; // hotfix: large dimension user
+utils.styles = {
+  car: "gray",
+  fish: "red",
+  house: "yellow",
+  tree: "green",
+  bicycle: "cyan",
+  guitar: "blue",
+  pencil: "megenta",
+  clock: "lightgray",
+};
 
 utils.formatPercent = (n) => {
   return (n * 100).toFixed(2) + "%";
