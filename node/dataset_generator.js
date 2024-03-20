@@ -1,5 +1,5 @@
 const draw = require("../common/draw.js");
-const constants = require("../common/contants.js");
+const constants = require("../common/constants.js");
 const utils = require("../common/utils.js");
 
 // --- visualize drawing on canvas ---

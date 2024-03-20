@@ -1,6 +1,6 @@
 const draw = {};
 
-draw.path = (ctx, path, color = "black") => {
+draw.path = (ctx, path, color = "white") => {
   ctx.strokeStyle = color;
   ctx.lineWidth = 3;
   ctx.beginPath();
@@ -13,7 +13,7 @@ draw.path = (ctx, path, color = "black") => {
   ctx.stroke();
 };
 
-draw.paths = (ctx, paths, color = "black") => {
+draw.paths = (ctx, paths, color = "white") => {
   for (const path of paths) {
     draw.path(ctx, path, color);
   }

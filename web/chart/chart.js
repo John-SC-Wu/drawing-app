@@ -2,11 +2,15 @@ class Chart {
   constructor(container, samples, options, onClick = null) {
     this.samples = samples;
 
+    // --- option assignment ---
     this.axesLabels = options.axesLabels;
     this.styles = options.styles;
     this.icon = options.icon;
+
+    // --- event bindings ---
     this.onClick = onClick;
 
+    // --- canvas ---
     this.canvas = document.createElement("canvas");
     this.canvas.width = options.size;
     this.canvas.height = options.size;
@@ -95,6 +99,7 @@ class Chart {
       if (!math.equals(dragInfo.offset, [0, 0])) {
         return;
       }
+
       if (this.hoveredSample) {
         if (this.selectedSample == this.hoveredSample) {
           this.selectedSample = null;
@@ -104,6 +109,7 @@ class Chart {
       } else {
         this.selectedSample = null;
       }
+
       if (this.onClick) {
         this.onClick(this.selectedSample);
       }

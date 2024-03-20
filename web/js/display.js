@@ -1,6 +1,8 @@
 function createRow(container, studentName, samples) {
   const row = document.createElement("div");
   row.classList.add("row");
+  const childNum = container.childNodes.length;
+  row.style.background = childNum % 2 ? "#000000" : "#444444";
   container.appendChild(row);
 
   const rowLabel = document.createElement("div");

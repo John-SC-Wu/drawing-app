@@ -1,6 +1,7 @@
 body {
   font-family: Arial;
-  background-color: skyblue;
+  background-color: #0d100d;
+  color: white; /*font color*/
   overscroll-behavior: none;
 }
 #content {
@@ -17,7 +18,7 @@ button {
   height: 22px;
   border-radius: 5px;
   background-color: navy;
-  color: white;
+  color: #0d100d;
 }
 button:hover {
   background-color: mediumblue;
@@ -42,11 +43,15 @@ button:disabled:hover {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  margin-left: 1.5rem;
 }
 
 .sampleContainer {
   flex: 1 1 0;
-  background-color: white;
+  /* background-color: #e7cc83; */
+  /* color: black; */
+  border-style: solid;
+  border-color: #d4af37;
   text-align: center;
   border-radius: 10%;
   margin: 1px;
@@ -58,7 +63,7 @@ button:disabled:hover {
 }
 
 .emphasize {
-  background-color: yellow;
+  background-color: rgba(255, 255, 0, 0.3);
 }
 
 #container {

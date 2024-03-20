@@ -1,3 +1,7 @@
+/**
+ * Canvas drawing modules
+ */
+
 const graphics = {};
 
 graphics.drawPoint = (ctx, loc, color = "black", size = 8) => {
