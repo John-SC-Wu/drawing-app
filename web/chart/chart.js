@@ -45,6 +45,17 @@ class Chart {
     this.#addEventListeners();
   }
 
+  showDynamicPoint(point, label, nearestSample) {
+    this.dynamicPoint = { point, label };
+    this.nearestSample = nearestSample;
+    this.#draw();
+  }
+
+  hideDynamicPoint() {
+    this.dynamicPoint = null;
+    this.#draw();
+  }
+
   #addEventListeners() {
     const { canvas, dataTrans, dragInfo } = this;
     canvas.onmousedown = (evt) => {

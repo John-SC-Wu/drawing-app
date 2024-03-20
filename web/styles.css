@@ -18,7 +18,8 @@ button {
   height: 22px;
   border-radius: 5px;
   background-color: navy;
-  color: #0d100d;
+  /* color: #0d100d; */
+  color: white;
 }
 button:hover {
   background-color: mediumblue;
@@ -75,4 +76,28 @@ button:disabled:hover {
   right: 0;
   top: 50%;
   transform: translate(0, -50%);
+}
+
+#inputContainer {
+  position: fixed;
+  right: 500px;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  margin: 10px;
+}
+
+#controlPanel {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 500px;
+  text-align: center;
+  padding: 10px;
+}
+
+#predictedLabelContainer {
+  color: white;
+  font-size: 30px;
+  position: relative;
 }
